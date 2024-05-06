@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css?t=<? echo rand(1,2000); ?>" rel="stylesheet">
-    <script src="/js/script.js?s=<? echo rand(1,2000); ?>"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/js/script.js"></script>
     <title><? echo $title; ?></title>
 </head>
 <body>
