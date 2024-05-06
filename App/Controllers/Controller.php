@@ -67,9 +67,6 @@ class Controller
             if (empty($data['errors'])) {
                 $this->purchase->updatePurchase($data['id'], $data['product_name'], $data['quantity'], $data['unit'], $data['price'], $data['purchase_date']);
                 header('Location: ' . $_POST['referer']);
-                $data = [];
-                $data['success'] = true;
-
             }
         }
         setView('purchases/edit', $data);
