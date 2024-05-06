@@ -1,0 +1,12 @@
+.table { width: 80%; }
+label { display: block; margin-bottom: 10px; }
+#purchaseForm {width: 500px; margin-left: 20px; float: left; clear: both;}
+.page_title, .alert {margin:20px 10px; width: auto; clear:both; float:left;}
+#menu {clear: both;}
+#menu ul { list-style-type: none; }
+#menu ul li {float:left; margin-left:10px; }
+.form-group { margin-bottom: 1rem; }
+.pagination {width:auto; margin-left:40%; font-size:20px;}
+.pagination a {float:left; margin-left:10px; margin-top: 5px;}
+.pagination .current {float:left; margin-left:10px; font-size:24px;}
+.total_pages { position: relative; top:5px; left:10px;}
