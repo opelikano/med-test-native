@@ -8,8 +8,7 @@ class Sql {
 
     private $host = 'localhost';
     private $user = 'root';
-    private $database = 'laravel_1';
-//    private $database = 'purchase_db';
+    private $database = '';
     private $password = '';
 
     private function __construct() {

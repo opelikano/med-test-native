@@ -64,7 +64,7 @@ class Purchases
     {
         $data = [];
         $data['product_name'] = cleanInput($arr['product_name']);
-        if (strlen($data['product_name']) < 13) {
+        if (strlen($data['product_name']) < 3) {
             $data['errors'][] = 'Некоректно введене поле назви продукту. Мінімум три символи.';
         }
         $data['quantity'] = cleanInput($arr['quantity']);
@@ -79,10 +79,10 @@ class Purchases
         if ($data['price'] <= 0 || !is_numeric($data['price'])) {
             $data['errors'][] = 'Некоректно введена ціна.';
         }
-        $data['purchase_date'] = cleanInput($arr['purchase_date']);
 
-        #todo
-        if ($data['purchase_date'] <= 0) {
+        $data['purchase_date'] = cleanInput($arr['purchase_date']);
+        $pattern = '/^\d{4}-\d{2}-\d{2}$/';
+        if (!preg_match($pattern, trim($data['purchase_date']))) {
             $data['errors'][] = 'Некоректно введена дата закупки.';
         }
         return $data;

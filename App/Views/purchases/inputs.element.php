@@ -5,7 +5,7 @@
 </div>
 <div class="form-group">
     <label for="quantity">Кількість:</label>
-    <input type="text" id="quantity" name="quantity" class="form-control" required value="<? echo isset($data['quantity']) ? $data['quantity'] : ''; ?>">
+    <input type="number" id="quantity" name="quantity" class="form-control" required value="<? echo isset($data['quantity']) ? $data['quantity'] : ''; ?>">
 </div>
 <div class="form-group">
     <label for="unit">Одиниці виміру:</label>
@@ -13,7 +13,7 @@
 </div>
 <div class="form-group">
     <label for="price">Ціна:</label>
-    <input type="text" step="0.01" id="price" class="form-control" name="price" required value="<? echo isset($data['price']) ? $data['price'] : ''; ?>">
+    <input type="number" step="0.01" id="price" class="form-control" name="price" required value="<? echo isset($data['price']) ? $data['price'] : ''; ?>">
 </div>
 <div class="form-group">
     <label for="purchase_date">Дата закупки:</label>

@@ -15,7 +15,7 @@
 
 <form id="purchaseForm" method="POST" action="?page=purchases&action=update">
     <? require_once 'inputs.element.php'; ?>
-    <input type="hidden" name="id" value="<? echo isset($data['id']) ? $data['id'] : ''; ?>">
-    <input type="hidden" name="referer" value="<? echo pathinfo($_SERVER['HTTP_REFERER'], PATHINFO_FILENAME); ?>">
+    <input type="hidden" name="id" value="<? echo $data['id']; ?>">
+    <input type="hidden" name="referer" value="<? echo $data['returnUrl']; ?>">
     <input type="submit" name="submit" class="btn btn-primary" value="Зберегти зміни">
 </form>
