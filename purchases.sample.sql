@@ -1,15 +1,3 @@
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
--- --------------------------------------------------------
-
 
 INSERT INTO `purchases` (`id`, `product_name`, `quantity`, `unit`, `price`, `purchase_date`, `created_at`, `updated_at`) VALUES
 (1, 'Sint iusto sed aut eos', 42, 'куб.м', '242.51', '2024-05-02', '2024-05-06 16:38:48', '2024-05-06 16:38:48'),
@@ -312,18 +300,3 @@ INSERT INTO `purchases` (`id`, `product_name`, `quantity`, `unit`, `price`, `pur
 (298, 'Iure id placeat magnam magni', 32, 'шт', '919.15', '2024-02-24', '2024-05-06 16:38:49', '2024-05-06 16:38:49'),
 (299, 'Fuga nostrum eum enim', 14, 'шт', '197.80', '2023-10-25', '2024-05-06 16:38:49', '2024-05-06 16:38:49'),
 (300, 'Quos laudantium dolores est', 9, 'шт', '831.53', '2023-07-05', '2024-05-06 16:38:49', '2024-05-06 16:38:49');
-
-
-ALTER TABLE `purchases`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT для таблицы `purchases`
---
-ALTER TABLE `purchases`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=301;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
